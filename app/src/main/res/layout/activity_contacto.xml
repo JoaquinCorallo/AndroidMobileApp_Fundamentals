@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"
+        >
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"
+        android:orientation="vertical"
+        android:gravity="top">
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent"
+            android:autofillHints="@string/nombre"
+            android:paddingTop="?attr/actionBarSize"
+            >
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
+            android:layout_width="fill_parent"
+            android:autofillHints="@string/correo">
+        </EditText>
+
+        <EditText
+            android:id="@+id/descripcion"
+            android:layout_height="wrap_content"
+            android:hint="@string/mensaje"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:layout_width="fill_parent"
+            android:autofillHints="@string/mensaje">
+        </EditText>
+
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_height="wrap_content"
+            android:text="@string/enviarcomentario"
+            android:layout_width="fill_parent">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
